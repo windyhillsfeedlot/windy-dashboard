@@ -5,87 +5,100 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Windy Hills Feedlot Dashboard</title>
 
-<style>
-body{
-    margin:0;
-    background:#143d2b;
-    color:white;
-    font-family:Arial,Helvetica,sans-serif;
-}
-header{
-    display:flex;
-    align-items:center;
-    background:#0b2419;
-    padding:20px;
-}
-header img{
-    height:90px;
-    margin-right:20px;
-}
-h1{
-    font-size:48px;
-    margin:0;
-}
-.container{
-    display:grid;
-    grid-template-columns:40% 60%;
-    gap:20px;
-    padding:20px;
-}
-.box{
-    background:#24563f;
-    border-radius:12px;
-    padding:20px;
-}
-.box h2{
-    font-size:34px;
-    margin-top:0;
-}
-.price{
-    font-size:32px;
-    margin:15px 0;
-}
-.footer{
-    position:fixed;
-    bottom:0;
-    width:100%;
-    background:#0b2419;
-    font-size:30px;
-    padding:15px;
-    text-align:center;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-<h1>Windy Hills Feedlot & Grow Yard</h1>
-</header>
-
 <div class="container">
 
-<div class="box">
+<div class="header">
+Windy Hills Feedlot & Grow Yard
+</div>
+
+<div class="sidebar">
+
+<img class="logo" src="logo.png">
+
+<div class="rate">
+<h2>Yardage</h2>
+<div class="price">$0.45</div>
+<p>/Head/Day</p>
+</div>
+
+<div class="rate">
+<h2>Doctoring</h2>
+<div class="price">$3</div>
+</div>
+
+<div class="rate">
+<h2>Chute Fee</h2>
+<div class="price">$3</div>
+</div>
+
+</div>
+
+<div class="panel">
+
+<div class="markets">
+
+<div class="market">
+<h3>Feeder Cattle</h3>
+<div class="value">Loading...</div>
+</div>
+
+<div class="market">
+<h3>Live Cattle</h3>
+<div class="value">Loading...</div>
+</div>
+
+<div class="market">
+<h3>Corn</h3>
+<div class="value">Loading...</div>
+</div>
+
+<div class="market">
+<h3>Soybean Meal</h3>
+<div class="value">Loading...</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="panel weather">
 <h2>Weather</h2>
-<p>Weather panel coming next...</p>
+<div class="temp">--°</div>
+<p>Loading weather...</p>
 </div>
 
-<div class="box">
-<h2>Markets</h2>
+<div class="bottom">
 
-<div class="price">🐂 Feeder Cattle</div>
-<div class="price">🐄 Live Cattle</div>
-<div class="price">🌽 Corn</div>
-<div class="price">🌱 Soybeans</div>
-<div class="price">🌾 Wheat</div>
+<div class="feed">
+<h3>Corn</h3>
+<p>$0.00</p>
+</div>
 
+<div class="feed">
+<h3>Distillers</h3>
+<p>$0.00</p>
+</div>
+
+<div class="feed">
+<h3>Protein</h3>
+<p>$0.00</p>
+</div>
+
+<div class="feed">
+<h3>Mineral</h3>
+<p>$0.00</p>
 </div>
 
 </div>
 
-<div class="footer">
-Yardage $0.45/head/day • Doctoring $3 • Chute Fee $3
 </div>
+
+<script src="script.js"></script>
 
 </body>
 </html>

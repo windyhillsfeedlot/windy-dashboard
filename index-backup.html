@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Windy Hills Feedlot Dashboard</title>
+
+<style>
+body{
+    margin:0;
+    background:#143d2b;
+    color:white;
+    font-family:Arial,Helvetica,sans-serif;
+}
+header{
+    display:flex;
+    align-items:center;
+    background:#0b2419;
+    padding:20px;
+}
+header img{
+    height:90px;
+    margin-right:20px;
+}
+h1{
+    font-size:48px;
+    margin:0;
+}
+.container{
+    display:grid;
+    grid-template-columns:40% 60%;
+    gap:20px;
+    padding:20px;
+}
+.box{
+    background:#24563f;
+    border-radius:12px;
+    padding:20px;
+}
+.box h2{
+    font-size:34px;
+    margin-top:0;
+}
+.price{
+    font-size:32px;
+    margin:15px 0;
+}
+.footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#0b2419;
+    font-size:30px;
+    padding:15px;
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Windy Hills Feedlot & Grow Yard</h1>
+</header>
+
+<div class="container">
+
+<div class="box">
+<h2>Weather</h2>
+<p>Weather panel coming next...</p>
+</div>
+
+<div class="box">
+<h2>Markets</h2>
+
+<div class="price">🐂 Feeder Cattle</div>
+<div class="price">🐄 Live Cattle</div>
+<div class="price">🌽 Corn</div>
+<div class="price">🌱 Soybeans</div>
+<div class="price">🌾 Wheat</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+Yardage $0.45/head/day • Doctoring $3 • Chute Fee $3
+</div>
+
+</body>
+</html>

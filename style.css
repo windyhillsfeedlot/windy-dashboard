@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#153d2b;
+    color:white;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:320px 1fr 360px;
+    grid-template-rows:90px auto 170px;
+    gap:15px;
+    padding:15px;
+    min-height:100vh;
+}
+
+.header{
+    grid-column:1/4;
+    background:#0f281c;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:48px;
+    font-weight:bold;
+}
+
+.panel{
+    background:#214f38;
+    border-radius:12px;
+    padding:18px;
+}
+
+.sidebar{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.logo{
+    width:100%;
+    border-radius:12px;
+    background:white;
+    padding:15px;
+}
+
+.rate{
+    background:#18432f;
+    border-radius:10px;
+    padding:18px;
+    text-align:center;
+}
+
+.rate h2{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.rate .price{
+    font-size:44px;
+    font-weight:bold;
+}
+
+.markets{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.market{
+    background:#18432f;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+}
+
+.market h3{
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.value{
+    font-size:40px;
+    font-weight:bold;
+}
+
+.weather{
+    text-align:center;
+}
+
+.weather h2{
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.temp{
+    font-size:72px;
+    font-weight:bold;
+}
+
+.bottom{
+    grid-column:2/4;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.feed{
+    background:#18432f;
+    border-radius:10px;
+    text-align:center;
+    padding:20px;
+}
+
+.feed h3{
+    font-size:22px;
+}
+
+.feed p{
+    font-size:38px;
+    font-weight:bold;
+    margin-top:10px;
+}
